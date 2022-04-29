@@ -1,0 +1,228 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  height: 100%;
+  background-color: #1e334e;
+}
+
+html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #F9F7F7;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10vh 1vw;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #F9F7F7;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 5% 15%;
+}
+
+/* Sections */
+
+.light-section {
+  background-color: #5c6a7c;
+  color: #000;
+}
+
+.dark-section {
+  background-color: #1e334e;
+  color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+  background-color: #364F6B;
+}
+
+.fixed-top {
+  padding: 0 15% 0;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #112D4E;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  height: 100vh;
+}
+
+/* Title Image */
+
+.bg {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2127&q=80");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+}
+
+.icon {
+  color: #3F72AF;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #F7AE28;
+}
+
+
+/* Skills Section */
+
+#skills {
+  padding: 10px;
+}
+
+.skills-text {
+  font-size: 1.2rem;
+  color: #3F72AF;
+  font-weight: 900;
+  line-height: 2;
+}
+
+.skills-column {
+  padding: 3% 1%;
+}
+
+.card {
+  height: 100%;
+  outline-style: outset;
+  outline-color: lightgrey;
+  outline-width: 0.5;
+}
+
+.card-image {
+  height: 80px;
+  padding: 3%;
+}
+
+
+.skill {
+  color: #000;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* Testimonial Section */
+
+#experience {
+  height: 60vh;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.carousel-item {
+  text-align: left;
+  padding: 5% 20%;
+}
+
+@media (max-width: 768px) {
+
+  .carousel-item {
+    padding: 5% 15%;
+    }
+
+  p {
+    font-size:0.8rem;
+  }
+}
+
+/* CTA Section */
+
+#cta {
+  padding: 3% 2%;
+}
+
+
+/* Footer Section */
+
+.social-icon {
+  margin: 5% 5%;
+  font-size: 3rem;
+  padding: 0%;
+  color: #fff;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+.form-label {
+    color: #F9F7F7;
+}
+
