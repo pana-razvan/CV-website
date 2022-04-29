@@ -12,7 +12,7 @@
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/f8a91dc816.js" crossorigin="anonymous"></script>
@@ -47,7 +47,7 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
@@ -117,7 +117,7 @@
       <div class="row">
         <div class="skills-column col-lg-4 col-md-6">
           <div class="card">
-            <img class="card-image" src="../images/coding-svgrepo-com.svg" alt="Developer-icon">
+            <img class="card-image" src="{{ url_for('static', filename='images/coding-svgrepo-com.svg') }}" alt="Developer-icon">
             <div class="card-header">
               <h3>Developer</h3>
             </div>
@@ -142,7 +142,7 @@
 
         <div class="skills-column col-lg-4 col-md-6">
           <div class="card">
-            <img class="card-image" src="../images/data-analysis.svg" alt="Data-icon">
+            <img class="card-image" src="{{ url_for('static', filename='images/data-analysis.svg') }}" alt="Data-icon">
             <div class="card-header">
               <h3>Python Lib's:</h3>
             </div>
@@ -167,7 +167,7 @@
 
         <div class="skills-column col-lg-4">
           <div class="card">
-            <img class="card-image" src="../images/linux-computer.svg" alt="Linux-icon">
+            <img class="card-image" src="{{ url_for('static', filename='images/linux-computer.svg') }}" alt="Linux-icon">
             <div class="card-header">
               <h3>Other</h3>
             </div>
@@ -198,7 +198,7 @@
 
     <div id="experience-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <h5><strong>Electrical Engineer</strong> at Global Technical Systems</h5>
           <p>Bucharest - April 2017 ÷ Current</p>
           <br>
@@ -222,7 +222,7 @@
           <p>● Participated in negotiations and technical clarifications meetings with Clients</p>
           <p>Projects: Extreme Light Infrastructure-Magurele</p>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <h5><strong>My work</strong> at 100 Days of Code: Complete Python Bootcamp</h5>
           <p>Bucharest - December 2021 ÷ April 2022</p>
           <br>
@@ -233,6 +233,8 @@
           <p>● Data Analysis: Using NumPy, Matplotlib, Plotly, Seaborn (see Days 71 to 80 on GitHub)</p>
           <p>● Personal Site: <a href="https://pana-razvan.github.io/Pana.Razvan/">https://pana-razvan.github.io/Pana.Razvan/</a></p>
           <p>● Blog Site: <a href="https://razvan-blog.herokuapp.com/">https://razvan-blog.herokuapp.com/</a></p>
+          <br>
+          <p>Certificate link: <a href="https://www.udemy.com/certificate/UC-610cceea-e125-44bf-9ab5-4ef2f3fe1210/">https://www.udemy.com/certificate/UC-610cceea-e125-44bf-9ab5-4ef2f3fe1210/</a></p>
         </div>
       </div>
       <a class="carousel-control-prev" href="#experience-carousel" role="button" data-slide="prev">
@@ -250,9 +252,9 @@
 
   <footer class="light-section" id="footer">
     <div class="container-fluid">
-      <i class="social-icon fab fa-github"></i>
-      <i class="social-icon fab fa-linkedin"></i>
-      <i class="social-icon fab fa-facebook-f"></i>
+      <a href="https://github.com/pana-razvan"><i class="social-icon fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pana-razvan/"><i class="social-icon fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/pana.razvan"><i class="social-icon fab fa-facebook-f"></i></a>
       <p>© Copyright 2022 Pana Razvan</p>
     </div>
   </footer>
